@@ -52,35 +52,10 @@ The project follows **Domain-Driven Design (DDD) + Event Sourcing Concepts**:
 
 👉 Each step is logged in **JSON file** and notified to observers.  
 
----
-
-## 📂 Project Structure
-
-src/
-└── com/example/Ecommerce/
-├── domain/
-│ ├── Order.java
-│ └── OrderItem.java
-│
-├── events/
-│ ├── Event.java
-│ ├── OrderCreatedEvent.java
-│ ├── PaymentReceivedEvent.java
-│ ├── ShippingScheduledEvent.java
-│ └── OrderCancelledEvent.java
-│
-├── observers/
-│ ├── Observer.java
-│ ├── LoggerObserver.java
-│ └── AlertObserver.java
-│
-├── EventLogger.java
-└── EcommerceApplication.java
-└── events.ndjson
-
 
 ## 🖥️ Example Run
-Order created and logged: Order{id='order1', status='CREATED', ...}
-[Logger] Event applied: PaymentReceivedEvent for Order order1
-[Logger] Event applied: ShippingScheduledEvent for Order order2
-[Alert] Sending alert for Order order3: Status changed to CANCELLED
+Order created and logged: Order{id='order1', status='CREATED', ...}<br>
+[Logger] Event applied: PaymentReceivedEvent for Order order1<br>
+[Logger] Event applied: ShippingScheduledEvent for Order order2<br>
+[Alert] Sending alert for Order order3: Status changed to CANCELLED<br>
+
